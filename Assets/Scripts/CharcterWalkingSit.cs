@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class CharcterWalkingSit : MonoBehaviour
 {
+    public GameObject npc;
     private Animator anim;
     public GameObject target;
     private NavMeshAgent agent;
@@ -18,18 +19,17 @@ public class CharcterWalkingSit : MonoBehaviour
         anim.SetBool("walkin", true);
         
     }
-
+    /*
     private void OnTriggerEnter(Collider other)
-    {
-        other = agent.GetComponent<Collider>();
-        Collider other1 = target.GetComponent<Collider>();
-        if (other.Equals( other1))
+    {   
+        if(other.gameObject.name==npc.name)        
         {
             anim.SetBool("walkin", false);
             anim.SetBool("siting", true);
         }
 
     }
+    */
     // Update is called once per frame
     void Update()
     {
