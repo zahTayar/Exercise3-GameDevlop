@@ -7,7 +7,7 @@ public class FpMotion : MonoBehaviour
 {
     public GameObject Acamera;
     private CharacterController Ccontroller;
-    private float speed = 5f;
+    private float speed = 9f;
     private float rx = 0f, ry;
     private float angularSpeed = 2;
     public GameObject enemy;

@@ -26,7 +26,12 @@ public class CharcterUpstairs : MonoBehaviour
     void Update()
     {
         agent.SetDestination(target.transform.position);
-        RaycastHit hit;
+        /*
+        if (agent.gameObject.name == target.name)
+            anim.SetBool("near", true);
+        /*
+         * 
+         * RaycastHit hit;
         if (Physics.Raycast(npc.transform.position, npc.transform.forward, out hit))
         {           
             lr.positionCount = agent.path.corners.Length;
@@ -40,5 +45,7 @@ public class CharcterUpstairs : MonoBehaviour
             }
 
         }
+        */
     }
+ 
 }

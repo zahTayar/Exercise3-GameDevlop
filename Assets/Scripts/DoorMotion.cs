@@ -17,6 +17,11 @@ public class DoorMotion : MonoBehaviour
         anim.SetBool("open", true);
         audio.PlayDelayed(1.5f);
     }
+    private void OnTriggerExit(Collider other)
+    {
+        anim.SetBool("open", false);
+        audio.PlayDelayed(1.5f);
+    }
     // Update is called once per frame
     void Update()
     {

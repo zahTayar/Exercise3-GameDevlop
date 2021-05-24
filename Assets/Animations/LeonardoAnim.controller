@@ -35,8 +35,7 @@ AnimatorState:
   m_Name: Walking
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1255982733737702606}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -65,9 +64,6 @@ AnimatorStateMachine:
     m_State: {fileID: 3533318564733232511}
     m_Position: {x: 290, y: 40, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6389346203885500375}
-    m_Position: {x: 310, y: 240, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -7081781102233110959}
     m_Position: {x: 280, y: 130, z: 0}
   m_ChildStateMachines: []
@@ -90,12 +86,6 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: walk
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: near
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
